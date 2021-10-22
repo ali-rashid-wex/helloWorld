@@ -35,6 +35,8 @@ public class helloWorld {
         System.out.println("--------------------------------------");
 
         System.out.println("HELLO GUYS");
+
+        int number;
     }
 
     private static void charAndBoolean() {
