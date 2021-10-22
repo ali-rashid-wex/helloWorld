@@ -71,7 +71,7 @@ public class helloWorld {
         System.out.println("-------------------");
     }
 
-    public static void myFirst(){
+    private static void myFirst(){
         System.out.println("-------------------");
         System.out.println("Hello, Ali");
 
