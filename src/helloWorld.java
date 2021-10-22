@@ -28,6 +28,9 @@ public class helloWorld {
         int myInt = 50;
         lastString = lastString + myInt;
         System.out.println("lastString is: " + lastString);
+        double doubleNumber = 120.47d;
+        lastString = lastString + doubleNumber;
+        System.out.println("lastString is now: " + lastString);
 
         System.out.println("--------------------------------------");
     }
