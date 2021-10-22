@@ -3,7 +3,29 @@ public class helloWorld {
     public static void main(String[] args){
         //myFirst();
         //primitiveTypes();
-        primitiveTypesChallenge();
+        //primitiveTypesChallenge();
+        floatAndDouble();
+    }
+
+    private static void floatAndDouble() {
+        System.out.println("-------------------");
+        System.out.println("FLOAT:");
+
+        float myMinFloat = Float.MIN_VALUE;
+        float myMaxFloat = Float.MAX_VALUE;
+        System.out.println("Minimum: " + myMinFloat);
+        System.out.println("Maximum: " + myMaxFloat);
+
+        System.out.println("-------------------");
+
+        System.out.println("DOUBLE:");
+
+        double myMinDouble = Double.MIN_VALUE;
+        double myMaxDouble = Double.MAX_VALUE;
+        System.out.println("Minimum: " + myMinDouble);
+        System.out.println("Maximum: " + myMaxDouble);
+
+        System.out.println("-------------------");
     }
 
     private static void primitiveTypesChallenge() {
