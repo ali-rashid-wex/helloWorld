@@ -1,20 +1,46 @@
 public class helloWorld {
 
     public static void main(String[] args){
-        myFirst();
-        System.out.println("-------------------");
+        //myFirst();
         primitiveTypes();
     }
 
     private static void primitiveTypes() {
+        //integers
+        System.out.println("-------------------");
+
+        System.out.println("INTEGERS:");
         int myValue = 10000;
         int myMinValue = Integer.MIN_VALUE;
         int myMaxValue = Integer.MAX_VALUE;
         System.out.println("Minimum: " + myMinValue);
         System.out.println("Maximum: " + myMaxValue);
+        System.out.println("Broken Minimum: " + (myMinValue - 1));
+        System.out.println("Broken Maximum: " + (myMaxValue + 1));
+
+        System.out.println("-------------------");
+
+        //bytes
+        System.out.println("BYTES:");
+        byte myMinByte = Byte.MIN_VALUE;
+        byte myMaxByte = Byte.MAX_VALUE;
+        System.out.println("Minimum: " + myMinByte);
+        System.out.println("Maximum: " + myMaxByte);
+
+        System.out.println("-------------------");
+
+        //short
+        System.out.println("SHORT:");
+        short myMinShort = Short.MIN_VALUE;
+        short myMaxShort = Short.MAX_VALUE;
+        System.out.println("Minimum: " + myMinShort);
+        System.out.println("Maximum: " + myMaxShort);
+
+        System.out.println("-------------------");
     }
 
     public static void myFirst(){
+        System.out.println("-------------------");
         System.out.println("Hello, Ali");
 
         int myFirstNumber = (10 + 5) + (2 * 10);
