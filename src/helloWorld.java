@@ -37,6 +37,18 @@ public class helloWorld {
         System.out.println("Maximum: " + myMaxShort);
 
         System.out.println("-------------------");
+
+        //long
+        System.out.println("LONG:");
+        long myLongValue = 100L;
+        long myMinLong = Long.MIN_VALUE;
+        long myMaxLong = Long.MAX_VALUE;
+        System.out.println("Minimum: " + myMinLong);
+        System.out.println("Maximum: " + myMaxLong);
+        long bigLongLit = 2_147_483_647_234L;
+        System.out.println("Big Long Literal Number: "+ bigLongLit);
+
+        System.out.println("-------------------");
     }
 
     public static void myFirst(){
