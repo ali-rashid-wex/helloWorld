@@ -2,7 +2,16 @@ public class helloWorld {
 
     public static void main(String[] args){
         //myFirst();
-        primitiveTypes();
+        //primitiveTypes();
+        primitiveTypesChallenge();
+    }
+
+    private static void primitiveTypesChallenge() {
+        byte byteNum = 23;
+        short shortNum = 293;
+        int intNum = 345;
+        long longNum = 50000L + (long)(10 * (byteNum + shortNum + intNum));
+        System.out.println(longNum);
     }
 
     private static void primitiveTypes() {
