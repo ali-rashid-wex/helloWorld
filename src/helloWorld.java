@@ -1,6 +1,20 @@
 public class helloWorld {
 
     public static void main(String[] args){
+        myFirst();
+        System.out.println("-------------------");
+        primitiveTypes();
+    }
+
+    private static void primitiveTypes() {
+        int myValue = 10000;
+        int myMinValue = Integer.MIN_VALUE;
+        int myMaxValue = Integer.MAX_VALUE;
+        System.out.println("Minimum: " + myMinValue);
+        System.out.println("Maximum: " + myMaxValue);
+    }
+
+    public static void myFirst(){
         System.out.println("Hello, Ali");
 
         int myFirstNumber = (10 + 5) + (2 * 10);
