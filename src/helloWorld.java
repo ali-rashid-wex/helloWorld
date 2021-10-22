@@ -8,7 +8,7 @@ public class helloWorld {
     }
 
     private static void floatAndDouble() {
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
         System.out.println("FLOAT:");
 
         float myMinFloat = Float.MIN_VALUE;
@@ -16,7 +16,7 @@ public class helloWorld {
         System.out.println("Minimum: " + myMinFloat);
         System.out.println("Maximum: " + myMaxFloat);
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
 
         System.out.println("DOUBLE:");
 
@@ -25,7 +25,22 @@ public class helloWorld {
         System.out.println("Minimum: " + myMinDouble);
         System.out.println("Maximum: " + myMaxDouble);
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
+
+        int myIntValue = 5/3;
+        float myFloatValue = 5f/3f;
+        double myDoubleValue = 5d/3d;
+        System.out.println("Int Value: " + myIntValue);
+        System.out.println("Float Value: " + myFloatValue);
+        System.out.println("Double Value: " +myDoubleValue);
+
+        System.out.println("--------------------------------------");
+
+        System.out.println("CHALLENGE:");
+
+        double pounds = 200;
+        double kiloEquivalent = pounds * 0.45359237;
+        System.out.println(pounds + " Lbs = " + kiloEquivalent + " KG");
     }
 
     private static void primitiveTypesChallenge() {
@@ -38,7 +53,7 @@ public class helloWorld {
 
     private static void primitiveTypes() {
         //integers
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
 
         System.out.println("INTEGERS:");
         int myValue = 10000;
@@ -49,7 +64,7 @@ public class helloWorld {
         System.out.println("Broken Minimum: " + (myMinValue - 1));
         System.out.println("Broken Maximum: " + (myMaxValue + 1));
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
 
         //bytes
         System.out.println("BYTES:");
@@ -58,7 +73,7 @@ public class helloWorld {
         System.out.println("Minimum: " + myMinByte);
         System.out.println("Maximum: " + myMaxByte);
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
 
         //short
         System.out.println("SHORT:");
@@ -67,7 +82,7 @@ public class helloWorld {
         System.out.println("Minimum: " + myMinShort);
         System.out.println("Maximum: " + myMaxShort);
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
 
         //long
         System.out.println("LONG:");
@@ -79,7 +94,7 @@ public class helloWorld {
         long bigLongLit = 2_147_483_647_234L;
         System.out.println("Big Long Literal Number: "+ bigLongLit);
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
 
         //casting
         System.out.println("CASTING:");
@@ -90,11 +105,11 @@ public class helloWorld {
         short myNewShort = (short) (myMinShort / 2);
         System.out.println("Casted New Short: " + myNewShort);
 
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
     }
 
     private static void myFirst(){
-        System.out.println("-------------------");
+        System.out.println("--------------------------------------");
         System.out.println("Hello, Ali");
 
         int myFirstNumber = (10 + 5) + (2 * 10);
