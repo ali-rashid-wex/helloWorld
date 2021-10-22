@@ -4,7 +4,56 @@ public class helloWorld {
         //myFirst();
         //primitiveTypes();
         //primitiveTypesChallenge();
-        floatAndDouble();
+        //floatAndDouble();
+        //charAndBoolean();
+        stringDataType();
+    }
+
+    private static void stringDataType() {
+        System.out.println("--------------------------------------");
+        System.out.println("STRING:");
+
+        String myString = "This is a string";
+        System.out.println("myString is: " + myString);
+        myString = myString + ", and this is more";
+        System.out.println("myString is: " + myString);
+        myString = myString + " \u00A9 2021";
+        System.out.println("myString is: " + myString);
+
+        String numString = "250.55";
+        numString = numString + "49.95";
+        System.out.println("numString is: " + numString);
+
+        String lastString = "10";
+        int myInt = 50;
+        lastString = lastString + myInt;
+        System.out.println("lastString is: " + lastString);
+
+        System.out.println("--------------------------------------");
+    }
+
+    private static void charAndBoolean() {
+
+        System.out.println("--------------------------------------");
+        System.out.println("CHAR:");
+
+        char myChar = 'D';
+        char myUnicodeChar = '\u0044';
+        char myCopyrightChar = '\u00A9';
+        System.out.println(myChar);
+        System.out.println(myUnicodeChar);
+        System.out.println(myCopyrightChar);
+
+        System.out.println("--------------------------------------");
+
+        System.out.println("BOOLEAN:");
+
+        boolean myTrue = true;
+        boolean myFalse = false;
+        System.out.println(myTrue);
+        System.out.println(myFalse);
+
+        System.out.println("--------------------------------------");
     }
 
     private static void floatAndDouble() {
