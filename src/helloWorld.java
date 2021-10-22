@@ -49,6 +49,17 @@ public class helloWorld {
         System.out.println("Big Long Literal Number: "+ bigLongLit);
 
         System.out.println("-------------------");
+
+        //casting
+        System.out.println("CASTING:");
+
+        byte myNewByte = (byte) (myMinByte / 2);
+        System.out.println("Casted New Byte: " + myNewByte);
+
+        short myNewShort = (short) (myMinShort / 2);
+        System.out.println("Casted New Short: " + myNewShort);
+
+        System.out.println("-------------------");
     }
 
     public static void myFirst(){
