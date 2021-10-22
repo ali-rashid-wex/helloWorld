@@ -33,6 +33,8 @@ public class helloWorld {
         System.out.println("lastString is now: " + lastString);
 
         System.out.println("--------------------------------------");
+
+        System.out.println("HELLO GUYS");
     }
 
     private static void charAndBoolean() {
