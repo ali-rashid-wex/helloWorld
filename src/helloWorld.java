@@ -6,7 +6,38 @@ public class helloWorld {
         //primitiveTypesChallenge();
         //floatAndDouble();
         //charAndBoolean();
-        stringDataType();
+        //stringDataType();
+        ifThenStatement();
+    }
+
+    private static void ifThenStatement() {
+        System.out.println("--------------------------------------");
+        boolean isAlien = false;
+
+        if (!isAlien) {
+            System.out.println("it is not an alien");
+        }
+        if(isAlien){
+            System.out.println("it is an alien");
+        }
+
+        System.out.println("--------------------------------------");
+
+        int topScore = 100;
+        int myScore = 90;
+        if (myScore == topScore){
+            System.out.println("you got the high score");
+        }
+        if (myScore != topScore){
+            System.out.println("you did not get the high score");
+        }
+
+        int secondTopScore = 60;
+        if ((myScore > secondTopScore) && (myScore < topScore)){
+            System.out.println("greater than second top score, and less than 100 (top score)");
+        }
+
+        System.out.println("--------------------------------------");
     }
 
     private static void stringDataType() {
@@ -33,10 +64,6 @@ public class helloWorld {
         System.out.println("lastString is now: " + lastString);
 
         System.out.println("--------------------------------------");
-
-        System.out.println("HELLO GUYS");
-
-        int number;
     }
 
     private static void charAndBoolean() {
