@@ -23,8 +23,8 @@ public class helloWorld {
 
         System.out.println("--------------------------------------");
 
-        int topScore = 100;
-        int myScore = 90;
+        final int topScore = 100;
+        int myScore = 80;
         if (myScore == topScore){
             System.out.println("you got the high score");
         }
@@ -37,6 +37,26 @@ public class helloWorld {
             System.out.println("greater than second top score, and less than 100 (top score)");
         }
 
+        if ((myScore > 90) || (secondTopScore <= 90)){
+            System.out.println("either or both of the conditions are true");
+        }
+
+        System.out.println("--------------------------------------");
+
+        boolean isCar = false;
+        if(isCar){
+            System.out.println("This is car");
+        }
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar){
+            System.out.println("wasCar is true");
+        }
+
+        int age = 20;
+        boolean is18OrOver = age >= 18 ? true : false;
+        System.out.println("is over 18: " + is18OrOver);
         System.out.println("--------------------------------------");
     }
 
