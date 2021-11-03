@@ -7,7 +7,24 @@ public class helloWorld {
         //floatAndDouble();
         //charAndBoolean();
         //stringDataType();
-        ifThenStatement();
+        //ifThenStatement();
+        javaSec3Challenge();
+    }
+
+    private static void javaSec3Challenge() {
+        double myFirstDouble = 20.00d;
+        double mySecondDouble = 80.00d;
+        double result1 = ((myFirstDouble + mySecondDouble)*100.00d);
+        double remainder = result1 % 40.00;
+
+        boolean isRemainder = remainder == 0 ? false : true;
+        System.out.println("This is the remainder var: " + isRemainder);
+        if (isRemainder){
+            System.out.println("There is a remainder, this is: " + remainder);
+        }
+        else if (!isRemainder){
+            System.out.println("There is no remainder");
+        }
     }
 
     private static void ifThenStatement() {
