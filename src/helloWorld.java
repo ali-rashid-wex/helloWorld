@@ -1,6 +1,6 @@
 public class helloWorld {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //SECTION 3 METHODS:
         /*
         sectionThree.myFirst();
@@ -11,9 +11,14 @@ public class helloWorld {
         sectionThree.stringDataType();
         sectionThree.ifThenStatement();
         sectionThree.javaSec3Challenge();
-        */
+         */
 
         //SECTION 4 METHODS:
+        /*
         sectionFour.keywordsAndExpressions();
+        sectionFour.statementsWhitespaceAndIndentation();
+        sectionFour.codeBlocks();
+         */
+        sectionFour.methods();
     }
 }

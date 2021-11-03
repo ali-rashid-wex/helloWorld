@@ -2,15 +2,14 @@ public class sectionThree {
     public static void javaSec3Challenge() {
         double myFirstDouble = 20.00d;
         double mySecondDouble = 80.00d;
-        double result1 = ((myFirstDouble + mySecondDouble)*100.00d);
+        double result1 = ((myFirstDouble + mySecondDouble) * 100.00d);
         double remainder = result1 % 40.00;
 
         boolean isRemainder = remainder == 0 ? false : true;
         System.out.println("This is the remainder var: " + isRemainder);
-        if (isRemainder){
+        if (isRemainder) {
             System.out.println("There is a remainder, this is: " + remainder);
-        }
-        else if (!isRemainder){
+        } else if (!isRemainder) {
             System.out.println("There is no remainder");
         }
     }
@@ -22,7 +21,7 @@ public class sectionThree {
         if (!isAlien) {
             System.out.println("it is not an alien");
         }
-        if(isAlien){
+        if (isAlien) {
             System.out.println("it is an alien");
         }
 
@@ -30,32 +29,32 @@ public class sectionThree {
 
         final int topScore = 100;
         int myScore = 80;
-        if (myScore == topScore){
+        if (myScore == topScore) {
             System.out.println("you got the high score");
         }
-        if (myScore != topScore){
+        if (myScore != topScore) {
             System.out.println("you did not get the high score");
         }
 
         int secondTopScore = 60;
-        if ((myScore > secondTopScore) && (myScore < topScore)){
+        if ((myScore > secondTopScore) && (myScore < topScore)) {
             System.out.println("greater than second top score, and less than 100 (top score)");
         }
 
-        if ((myScore > 90) || (secondTopScore <= 90)){
+        if ((myScore > 90) || (secondTopScore <= 90)) {
             System.out.println("either or both of the conditions are true");
         }
 
         System.out.println("--------------------------------------");
 
         boolean isCar = false;
-        if(isCar){
+        if (isCar) {
             System.out.println("This is car");
         }
 
         isCar = true;
         boolean wasCar = isCar ? true : false;
-        if (wasCar){
+        if (wasCar) {
             System.out.println("wasCar is true");
         }
 
@@ -135,12 +134,12 @@ public class sectionThree {
 
         System.out.println("--------------------------------------");
 
-        int myIntValue = 5/3;
-        float myFloatValue = 5f/3f;
-        double myDoubleValue = 5d/3d;
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5f / 3f;
+        double myDoubleValue = 5d / 3d;
         System.out.println("Int Value: " + myIntValue);
         System.out.println("Float Value: " + myFloatValue);
-        System.out.println("Double Value: " +myDoubleValue);
+        System.out.println("Double Value: " + myDoubleValue);
 
         System.out.println("--------------------------------------");
 
@@ -155,7 +154,7 @@ public class sectionThree {
         byte byteNum = 23;
         short shortNum = 293;
         int intNum = 345;
-        long longNum = 50000L + (long)(10 * (byteNum + shortNum + intNum));
+        long longNum = 50000L + (long) (10 * (byteNum + shortNum + intNum));
         System.out.println(longNum);
     }
 
@@ -200,7 +199,7 @@ public class sectionThree {
         System.out.println("Minimum: " + myMinLong);
         System.out.println("Maximum: " + myMaxLong);
         long bigLongLit = 2_147_483_647_234L;
-        System.out.println("Big Long Literal Number: "+ bigLongLit);
+        System.out.println("Big Long Literal Number: " + bigLongLit);
 
         System.out.println("--------------------------------------");
 
@@ -216,7 +215,7 @@ public class sectionThree {
         System.out.println("--------------------------------------");
     }
 
-    public static void myFirst(){
+    public static void myFirst() {
         System.out.println("--------------------------------------");
         System.out.println("Hello, Ali");
 
