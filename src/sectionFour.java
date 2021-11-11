@@ -89,7 +89,7 @@ public class sectionFour {
 
     public static void highScoreChallenge(){
         String player1 = "Ali", player2 = "James", player3 = "Phil", player4 = "Ben";
-        int score1 = 1500, score2 = 900, score3 = 400, score4 = 50;
+        int score1 = 1000, score2 = 900, score3 = 400, score4 = 50;
         int positionPlayer1 = calculateHighScorePosition(score1), positionPlayer2 = calculateHighScorePosition(score2), positionPlayer3 = calculateHighScorePosition(score3), positionPlayer4 = calculateHighScorePosition(score4);
 
         displayHighScorePostition(player1, positionPlayer1);
@@ -101,17 +101,15 @@ public class sectionFour {
     }
 
     public static void displayHighScorePostition(String name, int position){
-        System.out.println(name + " managed to get into position " + position);
+        System.out.println(name + " managed to get into position " + position + " on the high score table");
     }
 
     public static int calculateHighScorePosition(int score){
-        if (score > 1000){
+        if (score >= 1000){
             return 1;
-        }
-        else if (score > 500 && score < 1000){
+        } else if (score >= 500){
             return 2;
-        }
-        else if (score > 100 && score < 500){
+        } else if (score >= 100){
             return 3;
         }
         return 4;
