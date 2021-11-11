@@ -19,7 +19,9 @@ public class helloWorld {
         sectionFour.statementsWhitespaceAndIndentation();
         sectionFour.codeBlocks();
         sectionFour.methods();
-        */
         sectionFour.highScoreChallenge();
+        */
+
+        sectionFourCodingExercise.main();
     }
 }
