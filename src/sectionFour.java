@@ -2,6 +2,13 @@ public class sectionFour {
     public static final double kilometers = 1.609344;
     public static int counter = 1;
 
+    public static void main(){
+        int newScore = calculateScoreOverload("Ali", 200);
+        System.out.println("New score is " + newScore);
+        calculateScoreOverload(75);
+        calculateScoreOverload();
+    }
+
     public static void keywordsAndExpressions() {
         double oneHundredMilesToKilometers = 100 * kilometers;
         int highScore = 50;
@@ -113,5 +120,20 @@ public class sectionFour {
             return 3;
         }
         return 4;
+    }
+
+    public static int calculateScoreOverload(String name, int score){
+        System.out.println("Player " + name + " scored " + score + " points");
+        return score * 1000;
+    }
+
+    public static int calculateScoreOverload(int score){
+        System.out.println("Unnamed player scored " + score + " points");
+        return score * 1000;
+    }
+
+    public static int calculateScoreOverload(){
+        System.out.println("No player name or player score");
+        return 0;
     }
 }
