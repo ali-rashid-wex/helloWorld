@@ -29,7 +29,11 @@ public class sectionFourCodingExercise {
 
         //System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175));
 
-        System.out.println(hasTeen(122, 55, 32));
+        //System.out.println(hasTeen(122, 55, 32));
+
+        System.out.println(getDurationString(61, 59));
+        System.out.println(getDurationString(600));
+
     }
 
     public static long toMilesPerHour(double kilometersPerHour){
@@ -106,5 +110,23 @@ public class sectionFourCodingExercise {
         }
 
         return false;
+    }
+
+    public static String getDurationString(int mins, int seconds){
+        if ((mins < 0) || (seconds < 0) || (seconds > 59)){
+            return "Invalid value";
+        }
+        int remainderMins = mins % 60;
+        int hours = (mins - remainderMins) / 60;
+        return (hours + "h " + remainderMins + "m " + seconds + "s ");
+    }
+
+    public static String getDurationString(int seconds){
+        if (seconds < 0){
+            return "Invalid value";
+        }
+        int remainderSeconds = seconds % 60;
+        int mins = (seconds - remainderSeconds) / 60;
+        return getDurationString(mins, remainderSeconds);
     }
 }

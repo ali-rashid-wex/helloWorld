@@ -22,7 +22,7 @@ public class helloWorld {
         sectionFour.highScoreChallenge();
         */
 
-        //sectionFourCodingExercise.main();
-        sectionFour.main();
+        sectionFourCodingExercise.main();
+        //sectionFour.main();
     }
 }
