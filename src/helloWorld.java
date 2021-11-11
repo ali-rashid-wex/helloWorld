@@ -18,7 +18,8 @@ public class helloWorld {
         sectionFour.keywordsAndExpressions();
         sectionFour.statementsWhitespaceAndIndentation();
         sectionFour.codeBlocks();
-         */
         sectionFour.methods();
+        */
+        sectionFour.highScoreChallenge();
     }
 }

@@ -67,22 +67,53 @@ public class sectionFour {
         int lvlCompleted = 5;
         int bonus = 100;
 
-        calculateScore2(gameOver, score, lvlCompleted, bonus, counter);
+        System.out.println("Final score " + counter + " is: " + (calculateScore2(gameOver, score, lvlCompleted, bonus, counter)));
 
         score = 10000;
         lvlCompleted = 8;
         bonus = 200;
 
-        calculateScore2(gameOver, score, lvlCompleted, bonus, counter);
-        calculateScore2(true, 15000,10, 300, counter);
+        System.out.println("Final score " + counter + " is: " + (calculateScore2(gameOver, score, lvlCompleted, bonus, counter)));
+        System.out.println("Final score " + counter + " is: " + (calculateScore2(true, 15000,10, 300, counter)));
     }
 
-    public static void calculateScore2(boolean gameOver, int score, int lvl, int bonus, int counter) {
+    public static int calculateScore2(boolean gameOver, int score, int lvl, int bonus, int counter) {
         if (gameOver) {
             int finalScore = score + (lvl * bonus);
             finalScore += 1000;
-            System.out.println("Final score " + counter + " is: " + finalScore);
             sectionFour.counter++;
+            return finalScore;
         }
+        return -1;
+    }
+
+    public static void highScoreChallenge(){
+        String player1 = "Ali", player2 = "James", player3 = "Phil", player4 = "Ben";
+        int score1 = 1500, score2 = 900, score3 = 400, score4 = 50;
+        int positionPlayer1 = calculateHighScorePosition(score1), positionPlayer2 = calculateHighScorePosition(score2), positionPlayer3 = calculateHighScorePosition(score3), positionPlayer4 = calculateHighScorePosition(score4);
+
+        displayHighScorePostition(player1, positionPlayer1);
+        displayHighScorePostition(player2, positionPlayer2);
+        displayHighScorePostition(player3, positionPlayer3);
+        displayHighScorePostition(player4, positionPlayer4);
+
+
+    }
+
+    public static void displayHighScorePostition(String name, int position){
+        System.out.println(name + " managed to get into position " + position);
+    }
+
+    public static int calculateHighScorePosition(int score){
+        if (score > 1000){
+            return 1;
+        }
+        else if (score > 500 && score < 1000){
+            return 2;
+        }
+        else if (score > 100 && score < 500){
+            return 3;
+        }
+        return 4;
     }
 }
