@@ -31,8 +31,8 @@ public class sectionFourCodingExercise {
 
         //System.out.println(hasTeen(122, 55, 32));
 
-        System.out.println(getDurationString(61, 59));
-        System.out.println(getDurationString(600));
+        //System.out.println(getDurationString(61, 59));
+        //System.out.println(getDurationString(600));
 
     }
 
