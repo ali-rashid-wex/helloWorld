@@ -3,11 +3,12 @@ public class sectionFive {
     public static void main(){
         int value = 5;
         char charValue = 'C';
+        String month = "June";
 
-        swtichStatements(value, charValue);
+        swtichStatements(value, charValue, month);
     }
 
-    public static void swtichStatements(int val, char charVal){
+    public static void swtichStatements(int val, char charVal, String month){
         System.out.println("--------------------------------------");
 
         switch(val){
@@ -48,7 +49,21 @@ public class sectionFive {
                 System.out.println("Character not found");
                 break;
         }
-        
+
         System.out.println("--------------------------------------");
+
+        switch(month){
+            case "January": case "March": case "May": case "July": case "August": case "October": case "December":
+                System.out.println(month + " has 31 days!");
+                break;
+            case "February":
+                System.out.println("In common years, " + month + " has 28 days. In leap years it has 29 days");
+                break;
+            case "April": case "June": case "September": case "November":
+                System.out.println(month + " has 30 days!");
+                break;
+            default:
+                System.out.println("Cannot find that month");
+        }
     }
 }
