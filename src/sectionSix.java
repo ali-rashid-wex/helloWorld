@@ -9,9 +9,7 @@ public class sectionSix {
 
     public static void checkBankAccountClass(){
 
-        bankAccount account1 = new bankAccount();
-
-        account1.setAll("wexinc1", 100, "Ali Abbas Rashid", "aliabbasrashid@gmail.com", "07368300302");
+        bankAccount account1 = new bankAccount("wexinc1", 100, "Ali Abbas Rashid", "aliabbasrashid@gmail.com", "07368658235");
 
         System.out.println("--------------------------------------");
         System.out.println(account1.getAccountNumber());

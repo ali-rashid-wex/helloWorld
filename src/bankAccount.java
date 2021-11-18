@@ -1,9 +1,17 @@
 public class bankAccount {
 
     private String accountNumber, customerName, email, phoneNumber;
-    private int balance;
+    private double balance;
 
-    public void setAll(String accountNumber, int balance, String customerName, String email, String phoneNumber){
+    public bankAccount(String accountNumber, double balance, String customerName, String email, String phoneNumber){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setAll(String accountNumber, double balance, String customerName, String email, String phoneNumber){
         this.accountNumber = accountNumber;
         this.balance = balance;
         this.customerName = customerName;
@@ -15,7 +23,7 @@ public class bankAccount {
         return this.accountNumber;
     }
 
-    public int getBalance(){
+    public double getBalance(){
         return this.balance;
     }
 
@@ -31,7 +39,7 @@ public class bankAccount {
         return this.phoneNumber;
     }
 
-    public void deposit(int funds){
+    public void deposit(double funds){
         System.out.println("Balance: " + this.balance);
 
         if(funds < 0){
@@ -44,7 +52,7 @@ public class bankAccount {
         System.out.println("New balance: " + this.balance);
     }
 
-    public void withdraw(int funds){
+    public void withdraw(double funds){
         System.out.println("Balance: " + this.balance);
 
         if(funds < 0){
