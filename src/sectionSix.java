@@ -4,7 +4,25 @@ public class sectionSix {
 
         //checkCarClass();
 
-        checkBankAccountClass();
+        //checkBankAccountClass();
+
+        //checkWall();
+
+        checkFloor();
+    }
+
+    public static void checkFloor(){
+
+    }
+
+    public static void checkWall(){
+        wall wall1 = new wall(-1.25, -1.25);
+
+        System.out.println(wall1.getWidth());
+        System.out.println(wall1.getHeight());
+
+        wall1.setHeight(-1.25);
+        System.out.println(wall1.getHeight());
     }
 
     public static void checkBankAccountClass(){
